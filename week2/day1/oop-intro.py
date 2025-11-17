@@ -33,33 +33,34 @@ class Dog:
 
 #HOW TO CREATE AN OBJECT OF A SPECIFIC CLASS
 dog1 = Dog('Rex', 'black', 'german shepherd', 8, True)
-print(dog1)
+print(type(dog1))
 
-#accessing the attributes of a dog:
-print(dog1.name)
-print(dog1.age)
-print(dog1.is_trained)
+# #accessing the attributes of a dog:
+# print(dog1.name)
+# print(dog1.age)
+# print(dog1.is_trained)
 print(dog1.__dict__)
 
-dog1.guidance_dog = True
-print(dog1.guidance_dog)
+# dog1.guidance_dog = True
+# print(dog1.guidance_dog)
 
-#create a second object of class Dog, call it dog2 and you choose the attributes
-dog2 = Dog('Muchtar', 'grey', 'german shepherd', 1, False)
-print(dog2.age)
-print(dog2.__dict__)
+# #create a second object of class Dog, call it dog2 and you choose the attributes
+# dog2 = Dog('Muchtar', 'grey', 'german shepherd', 1, False)
+# print(dog2.age)
+# print(dog2.__dict__)
 
-#CALL THE METHOD: in order to call a method we need to use the object
+# #CALL THE METHOD: in order to call a method we need to use the object
 dog1.bark()
-dog2.bark()
+Dog.bark(dog1)
+# dog2.bark()
 
-dog1.run()
-dog2.run()
+# dog1.run()
+# dog2.run()
 
-dog2.walk('John')
-dog2.rename('Toto')
-print(dog2.name)
-print(dog2.__dict__)
+# dog2.walk('John')
+# dog2.rename('Toto')
+# print(dog2.name)
+# print(dog2.__dict__)
 
 # create a class called BankAccount, with 3 attributes:
 #- account houlder = name + last name of a person
