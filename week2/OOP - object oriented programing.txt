@@ -1,0 +1,15 @@
+OOP - object oriented programing
+class Bottle:
+{'material': 'metal', 'usage' :'store liquids', 'color': white}
+
+
+Classes: blueprint of objects 
+Attributes: characteristic of the object 
+Methods: functions related to a certain class - they denote the "behavior" of the object 
+Object/Instance: is an example/one instance of the class, structured as a dictionary
+
+4 pillars of OOP
+-Inheritance
+-Polymorphism
+-Encapsulation
+-Abstraction (not during this course)

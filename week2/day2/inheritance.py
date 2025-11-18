@@ -8,16 +8,19 @@ class Parent:
 
 class Child(Parent):
     def speak(self):
-        print('Child is speaking')
+        phrase = input('What you want to say?')
+        print(phrase)
 
 class Grandchild(Child):
     pass
 
 child1 = Child()
-child1.speak()
+child1.speak() 
+Parent.speak(child1)
 
 grandchild = Grandchild()
 grandchild.speak()
+
 
 #inheriting attributes
 
@@ -69,3 +72,8 @@ print(cat1.friendly)
 
 aliendog1 = AlienDog('Chubi', 'Mars', 'Bob', 'Canidae', 6, True, 10 )
 print(aliendog1.planet)
+
+# built-in polymorphism = len()
+
+print(len('Python')) #str object
+print(len([1,2,3,4,5])) #list object
