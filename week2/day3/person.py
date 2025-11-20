@@ -46,7 +46,7 @@ class Person:
         return datetime.datetime.strptime(self.birth_date, '%d-%m-%Y')
 
 
-    #DUNDER METHODS AKA MAGIC METHODS
+#DUNDER METHODS AKA MAGIC METHODS
 
     def __str__(self): #prints this string when we print the object 
         return f'Hello, my name is {self.full_name}, my birth-date is {self.birth_date}'
@@ -67,9 +67,9 @@ p1.first_name = 'Maria'
 print(p1.presentation())
 
 # print(p1)
-print(p1.age)
+print(p1.age)#possible because of the getter (@property)
 print(p1.email)
-p1.email = 'the.choosen@mycompany.com'
+p1.email = 'the.choosen@mycompany.com' #possible because of the setter
 print(p1.email)
 
 # print(p1.__salary) #gives AttributeError
@@ -81,8 +81,4 @@ p3 = Person.from_age('Sansa', 'stark', 30)
 print(p3.birth_date)
 print(p1 == p2)
 
-#CREATE A STATICMETHOD THAT FORMAT THE FIRST_NAME AND LAST_NAME AS FULL_NAME.
-#CREATE AN INTERNAL ATTRIBUTE CALLED FULL_NAME AND DO IT WITH THE STATIC METHOD
-#CREATE p4 NAME Daenerys Targaryen AGE 32
-#PRINT DAENERYS FULL_NAME
 
