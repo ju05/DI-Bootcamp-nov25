@@ -1,0 +1,42 @@
+<html>
+<body>
+  <div id="container">Users:</div>
+  <ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+  <ul class="list">
+    <li>Sarah</li>
+    <li>Dan</li>
+  </ul>
+  <script>
+//     For each of the questions, find 2 WAYS to access :
+
+// 1. The div node
+const div1 = document.getElementById('container')
+const div2 = document.querySelector('#container')
+
+// 2. The ul nodes, and render all of it's children one by one
+
+// const ul1 = document.getElementsByClassName('list')
+// console.log(ul1)
+
+// Array.from(ul1).forEach(litem => console.log(litem))
+
+const ul2 = document.getElementsByTagName('li')
+console.log(ul2)
+
+Array.from(ul2).forEach(li => console.log(li.innerText))
+
+// 3. The first li of each ul
+
+  let elements = document.querySelectorAll('ul > li:first-child');
+
+  for (let elem of elements) {
+    console.log(elem.innerHTML); 
+  }
+
+
+  </script>
+</body>
+</html>

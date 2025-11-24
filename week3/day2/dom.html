@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+</body>
+<script>
+//   For each of the questions, find 2 WAYS of accessing :
+
+// 1. The div DOM node?
+
+// 2. The ul DOM node?
+
+// 3. The second li (with Pete)?
+
+const divDom = document.body.firstElementChild
+console.log(divDom)
+
+const ulNode = document.body.firstElementChild.nextElementSibling
+
+console.log(ulNode)
+
+const pete = ulNode.lastElementChild
+
+console.log(pete)
+
+</script>
+</html> -->
+
+
+<html>
+<head>
+    <title>DOM!!!</title>
+</head>
+<body>
+  <h1>Welcome</h1>
+  <p>This is the welcome message.</p>
+  <h2>Technology</h2>
+  <p id="second">This is the technology section.</p>
+
+  <script>
+    let paragraphs = document.getElementsByTagName("p");
+    alert("Content in the second paragraph is " + paragraphs[1].innerHTML);
+    document.getElementById("second").innerHTML = "The orginal message is changed.";
+  </script>
+
+</body>
+</html>
