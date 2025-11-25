@@ -1,0 +1,25 @@
+<html>
+<body>
+    <button id="btn">Click me</button>
+    <button id="btn1">Hey Hey</button>
+
+    <script>
+        let x = document.getElementById("btn")
+        let y = document.getElementById("btn1")
+
+        y.addEventListener("mouseover", RespondMouseOver);
+
+        x.addEventListener("mouseover", RespondMouseOver); 
+
+        function RespondMouseOver(e) { 
+            console.log("e", e) 
+            // all the properties of the event object
+            console.log("My mouse is over the btn named" + e.target.innerHTML)
+            console.log("e.type: ", e.type)
+            // e.type: mouseover
+            console.log("e.target: ", e.target)
+            // e.target:  <button id=​"btn1">​Hey Hey​</button>​
+        } 
+    </script>
+</body>
+</html>

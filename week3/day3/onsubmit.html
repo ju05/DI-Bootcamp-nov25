@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>on submit</title>
+</head>
+<body>
+     <form id="form1" onsubmit="getvalue(event)"> 
+        <label>First name: </label><input type="text" name="fname" value="David"><br> 
+        <label>Last name: </label><input type="text" name="lname" value="BenGurion"><br> 
+        <input type="submit" value="Submit"> 
+    </form>  
+</body>
+<script>
+
+  
+
+  function getvalue(event) {
+    event.preventDefault()
+    console.log(event.target[0].value)
+    console.log(event.target[1].value)
+  }
+</script>
+</html>

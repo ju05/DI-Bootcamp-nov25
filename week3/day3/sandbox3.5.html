@@ -1,0 +1,16 @@
+<form name="my">
+  <label for="usercomment">Enter some text</label>
+  <input id="usercomment" type="text" value="text"><br>
+  <input type="submit" value="Submit">
+</form>
+
+    <script>
+            let form = document.forms.my;
+
+            form.addEventListener("submit", getUserComments)
+
+            function getUserComments(e){
+              // e.preventDefault()
+              alert('submit ! ')
+            }
+    </script>

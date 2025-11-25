@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="btn">Click me</button>
+
+    <script>
+        let x = document.getElementById("btn")
+
+        x.addEventListener("click", RespondClick); 
+        x.addEventListener("mouseover", RespondMouseOver); 
+        x.addEventListener("mouseout", RespondMouseOut); 
+
+        function RespondClick() { 
+            x.style.backgroundColor = 'red'
+        } 
+
+        function RespondMouseOver() { 
+            x.style.backgroundColor = 'green'
+        } 
+
+        function RespondMouseOut() { 
+            x.style.backgroundColor = 'grey'
+        }     
+
+    </script>
+</body>
+</html>

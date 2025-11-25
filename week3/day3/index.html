@@ -1,0 +1,19 @@
+    <!-- <form>
+        <input type="button" name="test" value="Click me" onclick="inform()">
+    </form>
+
+    <script>
+        function inform(){
+            alert("You clicked me")
+        }
+    </script> -->
+
+        <form>
+        <input id="button" type="button" name="test" value="Click me">
+    </form>
+
+    <script>
+       document.getElementById('button').onclick = function() {
+            alert('Click!');
+        };
+    </script>
