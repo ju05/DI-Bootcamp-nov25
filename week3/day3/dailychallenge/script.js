@@ -3,7 +3,8 @@ const form = document.getElementById('libform');
 // Other ways to do the same thing:
 // const form = document.querySelector('#libform')
 // const form = document.forms[0];
-// const form = document.getElementsByTagName('libform')[0];
+// const form = document.getElementsByTagName('form')[0];
+// const form = document.body.firstElementChild.nextElementSibling
 
 form.addEventListener('submit', function (e) {
   // always prevent default
