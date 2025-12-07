@@ -28,3 +28,9 @@ function isAllowed(action: number | string): boolean {
     return false;
   }
 }
+
+type aaron = boolean | string;
+let guy: aaron = 'Wolf';
+guy = true;
+guy = false;
+// guy = 55
